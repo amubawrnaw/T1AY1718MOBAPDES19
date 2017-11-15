@@ -34,7 +34,7 @@ public class register extends AppCompatActivity {
 
                 if(l!=-1){
                     Intent i = new Intent();
-                    i.setClass(getBaseContext(), success_login.class);
+                    i.setClass(getBaseContext(), login.class);
                     startActivity(i);
                 }else{
                     Toast.makeText(getBaseContext(), "Error: Email Already Used", Toast.LENGTH_SHORT).show();
