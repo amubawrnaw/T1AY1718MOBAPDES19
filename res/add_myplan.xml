@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COACH"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:textSize="30sp"
+        android:id="@+id/tv_coach"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_coach"
+        android:orientation="horizontal"
+        android:background="#000000"
+        android:id="@+id/buttons">
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="FOCUS"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:background="#000000"
+            android:textSize="20sp"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#000"
+            android:text="ROUTINE"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="MY PLAN"
+            android:layout_weight="1"
+            android:textColor="#8e8e8e"
+            android:background="#000000"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttons"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Routine to Add:"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:padding="15dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:padding="30dp"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="#000000"
+            android:text="CANCEL"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/button_cancel"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="#000000"
+            android:text="DONE"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/button_done"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+</RelativeLayout>
